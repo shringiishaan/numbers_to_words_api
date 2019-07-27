@@ -5,7 +5,7 @@
      "main": "index.js",
      "scripts": {
           "dev": "ts-node-dev --respawn --transpileOnly ./server.ts",
-          "prod": "tsc app.ts --outDir dist",
+          "prod": "tsc ./server.ts --outDir ./dist && node ./dist/server.js",
           "tsc": "tsc"
      },
      "author": "",

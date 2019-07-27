@@ -1,8 +1,8 @@
-import express from "express"
-import bodyParser from "body-parser"
-import compression from "compression"
+let express = require("express")
+import * as bodyParser from "body-parser"
+import * as compression from "compression"
 import converter from 'convert-rupees-into-words'
-import jwt from 'jsonwebtoken'
+import * as jwt from 'jsonwebtoken'
 import key from './key'
 
 const app = express()
@@ -45,11 +45,12 @@ app.post("/to_words", (req, res) => {
                     words: converter(number)
                })
           }
-          else 
-          res.json({
-               success: false,
-               error: 'Invalid number in body'
-          })
+          else {
+               res.json({
+                    success: false,
+                    error: 'Invalid number in body'
+               })
+          }
      }
      catch(err) {
           res.json({
