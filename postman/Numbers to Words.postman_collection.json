@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "377494b9-ae21-4c78-8eb8-97295534daf2",
+		"name": "Numbers to Words",
+		"description": "CardinBox Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET API KEY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/get_api_key",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"get_api_key"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONVERT TO WORDS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"number\":236482343,\n\t\"token\":\"eyJhbGciOiJIUzI1NiJ9.ZGpnaGhoaHV1d2l3dWV3aWV1d2lldXJpd3U.EG5jX0Q5riihDkn7a0n_jFQ5Ca842qpUEsy8xMoGoq4\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/to_words",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"to_words"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
