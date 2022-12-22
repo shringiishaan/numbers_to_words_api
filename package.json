@@ -18,7 +18,7 @@
           "convert-rupees-into-words": "^1.0.6",
           "cors": "^2.8.5",
           "express": "^4.17.1",
-          "jsonwebtoken": "^8.5.1",
+          "jsonwebtoken": "^9.0.0",
           "ts-node-dev": "^1.0.0-pre.40",
           "typescript": "^3.5.3"
      }
